@@ -137,7 +137,7 @@
 }
 
 .second {
-  background: url('../img/second-bg.png') no-repeat center top / 110% 100%;
+  background: url('../img/second-bg.png') no-repeat center top / auto 100%;
   padding: 80px 0;
 
   .title {
@@ -354,5 +354,19 @@
 
   h2 {
     font-size: 28px;
+  }
+
+  .third {
+
+    ul {
+
+      li {
+        margin-top: 40px;
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+    }
   }
 }
