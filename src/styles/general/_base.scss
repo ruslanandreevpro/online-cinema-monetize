@@ -1,17 +1,17 @@
 body {
-	font-family: "Proxima Nova Rg", sans-serif;
-	font-size: 17px;
-    overflow-x: hidden;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 17px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
   font-size: 42px;
-	font-weight: bold;
+  font-weight: bold;
 }
 
 h2 {
@@ -28,16 +28,8 @@ a {
   text-decoration: none;
 }
 
-.container {
-	@include container();
-	@include sm(max-width, 510px);
-	@include md(max-width, 690px);
-	@include lg(max-width, 930px);
-	@include xl(max-width, 1110px);
-}
-
 .img-responsive {
-	max-width: 500px;
-	width: 100%;
-	height: auto;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
 }

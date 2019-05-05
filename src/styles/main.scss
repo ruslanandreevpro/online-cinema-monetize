@@ -5,6 +5,17 @@
 @import "general/base";
 @import "../blocks/blocks";
 
+.cta {
+  margin-top: 45px;
+
+  button {
+    width: 310px;
+    height: 62px;
+    border-radius: 5px;
+    background-color: #3dbe56;
+  }
+}
+
 .header {
   padding: 200px 0 30px;
 
@@ -67,25 +78,13 @@
   }
 
   .title {
-    @include row-flex();
-    @include col();
-    @include size-md(12);
-    @include size-lg(7);
   }
 
   .hello {
-    @include row-flex();
-    @include col();
-    @include size-md(12);
-    @include size-lg(7);
     margin-top: 25px;
   }
 
   .how-work {
-    @include row-flex();
-    @include col();
-    @include size-md(12);
-    @include size-lg(6);
     margin-top: 45px;
     position: relative;
 
@@ -105,43 +104,19 @@
   }
 
   .cta {
-    @include row-flex();
-    @include col();
-    @include size(12);
-    margin-top: 45px;
-
-    button {
-      width: 310px;
-      height: 62px;
-      border: none;
-      border-radius: 5px;
-      background-color: #3dbe56;
-      color: #ffffff;
-      font-weight: bold;
-      cursor: pointer;
-    }
   }
 
   .bottom {
-    @include row-flex();
-    @include md(justify-content, center);
-    @include col();
-    @include size(12);
-    @include size-md(10);
-    @include size-lg(8);
-    @include shift(0);
-    @include shift-md(1);
-    @include shift-lg(2);
     margin-top: 100px;
     padding: 15px 35px;
     border-radius: 5px;
     background-color: #e6eefd;
     text-align: center;
 
-     p {
-       font-size: 14px;
-       color: #061825;
-     }
+    p {
+      font-size: 14px;
+      color: #061825;
+    }
   }
 
   .more {
@@ -162,14 +137,13 @@
     margin-top: 35px;
     padding: 40px 60px;
     background-color: #ffffff;
-    @include row-flex();
-    @include sm(justify-content, space-around);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
     li {
-      @include col();
-      @include size(12);
-      @include size-lg(6);
       text-align: center;
+      width: 40%;
 
       div {
         width: 38px;
@@ -209,34 +183,14 @@
 
       &:nth-child(3) {
         margin-top: 60px;
-        @include size(12);
-        @include size-lg(8);
+        width: 60%;
       }
-    }
-  }
-
-  .cta {
-    @include row-flex();
-    @include sm(justify-content, center);
-    @include col();
-    @include size(12);
-    margin-top: 45px;
-
-    button {
-      width: 310px;
-      height: 62px;
-      border: none;
-      border-radius: 5px;
-      background-color: #3dbe56;
-      color: #ffffff;
-      font-weight: bold;
-      cursor: pointer;
     }
   }
 }
 
 .third {
-  padding: 75px 0 130px;
+  padding: 75px 0 90px;
 
   .title {
     text-align: center;
@@ -244,13 +198,11 @@
 
   ul {
     margin-top: 80px;
-    @include row-flex();
-    @include sm(justify-content, space-around);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     li {
-      @include col();
-      @include size(12);
-      @include size-md(3);
 
       .icon {
         width: 60px;
@@ -290,37 +242,12 @@
       }
     }
   }
-
-  .cta {
-    @include row-flex();
-    @include sm(justify-content, center);
-    @include col();
-    @include size(12);
-    margin-top: 90px;
-
-    button {
-      width: 310px;
-      height: 62px;
-      border: none;
-      border-radius: 5px;
-      background-color: #3dbe56;
-      color: #ffffff;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  }
 }
 
 .footer {
   padding: 0 0 30px;
 
   .content {
-    @include row-flex();
-    @include col();
-    @include size(12);
-    @include size-md(4);
-    @include shift(0);
-    @include shift-md(4);
     position: relative;
 
     p {
@@ -405,6 +332,10 @@
 
 @media screen and (max-width: 1199px) {
 
+  .container {
+    width: 90%;
+  }
+
   .header {
 
     .illustration {
@@ -425,9 +356,27 @@
       }
     }
   }
+
+  .second {
+
+    ul {
+
+      li {
+        width: 50%;
+
+        &:nth-child(3) {
+          width: 75%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
+
+  .container {
+    width: 90%;
+  }
 
   .header {
     padding: 90px 0 30px;
@@ -446,10 +395,28 @@
     ul {
 
       li {
+        width: 100%;
         margin-top: 30px;
 
         &:nth-child(3) {
+          width: 100%;
           margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .third {
+    padding: 60px 0;
+
+    ul {
+
+      li {
+        width: 100%;
+        margin-top: 40px;
+
+        &:nth-child(1) {
+          margin-top: 0;
         }
       }
     }
@@ -471,7 +438,7 @@
     .how-work {
 
       &:before {
-        top: -35px;
+        top: -25px;
       }
     }
 
@@ -503,11 +470,7 @@
     ul {
 
       li {
-        margin-top: 40px;
 
-        &:nth-child(1) {
-          margin-top: 0;
-        }
       }
     }
 
@@ -531,34 +494,6 @@
   }
 
   .modal {
-
-    .modal-header {
-
-      h3 {
-
-      }
-
-      p {
-
-      }
-    }
-
-    .modal-content {
-
-      form {
-
-        .input-field {
-
-          input {
-
-          }
-
-          label {
-
-          }
-        }
-      }
-    }
 
     .modal-footer {
 
