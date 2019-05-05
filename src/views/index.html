@@ -49,6 +49,9 @@
                         <h6>Как это работает?</h6>
                         <p>Например, вы хотите запостить у себя в группе трейлер нового фильма, возьмите ссылку на трейлер на сайте нашего кинотеатра (а если такого видео нет, то мы зальём специально для вас), добавьте свою индивидуальную реферальную ссылку, и получайте деньги за каждый просмотр (2 копейки за просмотр рекламы).</p>
                     </div>
+                    <div class="cta">
+                        <button id="cta" class="btn modal-trigger" data-target="modal1">Хочу попробовать</button>
+                    </div>
                     <div class="bottom">
                         <p>TrafficStore.com и онлайн-кинотеатр zubator.com совместно создали проект, который&nbsp;позволяет вам монетизировать трафик и зарабатывать на каждом зрителе.</p>
                     </div>
@@ -85,6 +88,9 @@
                             <p>Нужно <span>взять последнюю часть этой ссылки  — ?ref=f45360a153443f4e</span> и&nbsp;готовая&nbsp;ссылка для пользователей Вашей группы должна быть вида: http://zubator.com/2019/04/03/Охота-на-дьявола-14-Серия/?ref=f45360a153443f4e</p>
                         </li>
                     </ul>
+                    <div class="cta">
+                        <button id="cta" class="btn modal-trigger" data-target="modal1">Зарегистрироваться</button>
+                    </div>
                 </div>
             </section>
             <section id="third" class="third">
@@ -234,6 +240,9 @@
                             <p>IP адреса дата-центров будут баниться</p>
                         </li>
                     </ul>
+                    <div class="cta">
+                        <button id="cta" class="btn modal-trigger" data-target="modal1">Начать монетизацию</button>
+                    </div>
                 </div>
             </section>
             <footer id="footer" class="footer">
@@ -244,6 +253,28 @@
                 </div>
             </footer>
         </main>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-header">
+                <h3>Зарегистироваться</h3>
+                <p>Введите ваш контактный email и мы<br>свяжемся с вами</p>
+            </div>
+            <div class="modal-content">
+                <form action="#">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field">
+                                <input id="email_inline" type="email" class="validate">
+                                <label for="email_inline">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
+            </div>
+        </div>
 		//= includes/scripts.html
 	</body>
 </html>
