@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Proxima Nova Rg';
   src: url('../../fonts/ProximaNova-Regular.eot');
-  src: local('Proxima Nova Regular'), local('./fonts/ProximaNova-Regular'),
+  src: local('Proxima Nova Regular'), local('../fonts/ProximaNova-Regular'),
   url('../../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
   url('../../fonts/ProximaNova-Regular.woff') format('woff'),
   url('../../fonts/ProximaNova-Regular.ttf') format('truetype');
@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Proxima Nova Rg';
   src: url('../../fonts/ProximaNova-Bold.eot');
-  src: local('Proxima Nova Bold'), local('./fonts/ProximaNova-Bold'),
+  src: local('Proxima Nova Bold'), local('../fonts/ProximaNova-Bold'),
   url('../../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
   url('../../fonts/ProximaNova-Bold.woff') format('woff'),
   url('../../fonts/ProximaNova-Bold.ttf') format('truetype');

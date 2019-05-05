@@ -472,8 +472,6 @@
 
       &:before {
         top: -35px;
-        left: 50%;
-        transform: translateX(-50%);
       }
     }
 
@@ -486,6 +484,10 @@
   }
 
   .second {
+
+    ul {
+      padding: 30px 15px;
+    }
 
     .cta {
 
@@ -564,5 +566,13 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .modal {
+    padding: 20px;
+    min-height: 330px;
   }
 }
